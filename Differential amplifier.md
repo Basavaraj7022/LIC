@@ -34,46 +34,11 @@ These amplifiers play a crucial role in instrumentation systems, audio processin
 
 # Design 
 
-* Assume M1 and M2 are perfectly identical
-* Vicm1 = Vicm2 = Vicm
-* RD1 = RD2 = RD
-* ID1 = ID2 = Iss/2
-* VGS1 = VGS2 =VGS
-* Vocm1 = Vocm2 = Vocm = 1.4V
- <br> Vicm = Vp + VGS </br>
-       1.3 = 0.5 + VGS </br>
-       1.3-0.5 = VGS </br>
-       <table>
-       <td>V<sub>GS</sub> = 0.8V</td>
-       </table>
-- we can conclude that VGS >= Vth , M1 and M2 are in ON state
-- Given P = 3mW we can calucalate Iss
-- Iss = P/VDD
-- Iss = 3mW/2.5V
-- Iss = 1.2mA
-- we known that ID = Iss/2
-       <table>
-       <td>I<sub>D</sub> = 1.2mA</td>
-       </table>
-- Rss = Vp/I<sub>ss</sub> = 0.5/1.2m
-    <table>
-     <td>R<sub>ss</sub> = 0.416K</td>
-     </table>
-- V<sub>ocm</sub> = V<sub>DD</sub> - I<sub>D</sub>*R<sub>D</sub>
-- R<sub>D</sub> = (V<sub>DD</sub> - V<sub>ocm</sub>)/I<sub>D</sub>
-  - R<sub>D</sub> = (2.5 - 1.4)/0.6m
-   <table>
-     <td>R<sub>D</sub> = 1.833K</td>
-     </table>
-- we can conclude V<sub>ocm</sub> >= V<sub>GS</sub> - V<sub>th</sub>
-   - V<sub>ocm</sub> = 0.8 - 0.36
-   <table>
-       <td>V<sub>ocm</sub> >= 0.44V</td>
-      </table>
-<br>Therefore M1 and M2 are in saturation region</br>
+Assuming M1 and M2 are perfectly identical, the common-mode input voltages are equal, i.e., \( V_{icm1} = V_{icm2} = V_{icm} \), and the drain resistances are also identical, \( R_{D1} = R_{D2} = R_D \). The drain currents of both transistors are given by \( I_{D1} = I_{D2} = I_{ss}/2 \), and the gate-to-source voltages are the same, \( V_{GS1} = V_{GS2} = V_{GS} \). The common-mode output voltage is \( V_{ocm1} = V_{ocm2} = V_{ocm} = 1.4V \). The relationship between the common-mode input voltage and threshold voltage is given by \( V_{icm} = V_p + V_{GS} \), which leads to \( 1.3V = 0.5V + V_{GS} \), resulting in \( V_{GS} = 0.8V \). Since \( V_{GS} \geq V_{th} \), we can conclude that both transistors M1 and M2 are in the ON state.
+
+Given the power dissipation \( P = 3mW \) and supply voltage \( V_{DD} = 2.5V \), the tail current \( I_{ss} \) is calculated as \( I_{ss} = P / V_{DD} = 3mW / 2.5V = 1.2mA \). Since \( I_D = I_{ss}/2 \), we get \( I_D = 0.6mA \). The source resistance is given by \( R_{ss} = V_p / I_{ss} = 0.5V / 1.2mA = 0.416K\Omega \). The output common-mode voltage is given by \( V_{ocm} = V_{DD} - I_D R_D \), and solving for \( R_D \), we get \( R_D = (V_{DD} - V_{ocm}) / I_D = (2.5V - 1.4V) / 0.6mA = 1.833K\Omega \). Finally, since \( V_{ocm} \geq V_{GS} - V_{th} \), substituting values, we get \( V_{ocm} = 0.8V - 0.36V = 0.44V \), which satisfies the condition. Therefore, we can conclude that both transistors M1 and M2 are operating in the saturation region.
 **DC ANALYSIS:-**
 ![screen2](https://github.com/user-attachments/assets/e223f16d-af1d-453a-9624-6cfb43b06f81)
-
 
 
  - simulation
