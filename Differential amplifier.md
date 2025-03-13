@@ -10,11 +10,9 @@ For small-signal operation, AC analysis is carried out to determine the voltage 
 This type of amplifier is commonly used in RF circuits, audio amplification, and signal processing applications where moderate gain and phase inversion are required. Proper component selection and biasing help in optimizing its performance for different applications.
 # Design Question
 Design differential amplifier for the following specifications
-____
-|Parameters |Vdd| P | Vicm | Vocm | Vp |
-| ------------- | ------------- |
-|Secifications| 2.5V| <=3MW | 1.3V| 1.4V | 0.5V|
-___
+| Parameters    | Vdd  | P      | Vicm  | Vocm  | Vp   |
+|--------------|------|--------|-------|-------|------|
+| Specifications | 2.5V | ≤3MW   | 1.3V  | 1.4V  | 0.5V |
 
 
 
