@@ -144,10 +144,12 @@ For the same design value
     </table> 
     - from this we can coclude that MOSFET M3 is in saturation region which it can act has constant current source 
     - When we perform DC analysis to check the parameters values we got :-
+    
+![Screenshot 2025-03-13 213737](https://github.com/user-attachments/assets/23d6474a-7587-470b-a816-9afcbad59db8)
 
-    ![WhatsApp Image 2025-03-09 at 11 44 32_2bbb3f9c](https://github.com/user-attachments/assets/408f6069-c9ca-4d0e-a344-78174430e4be)
 
-  Next in order to find the gain we perform transient analysis we got as below :-
+
+  **Trasient Analysis**
 
   ![WhatsApp Image 2025-03-09 at 11 46 03_7bc8070e](https://github.com/user-attachments/assets/a2bce1ed-e9be-47b0-9609-18d346fa62b9)
 
