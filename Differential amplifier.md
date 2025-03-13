@@ -21,8 +21,13 @@ Perform DC analysis transient analysis and frequency response and extract the re
 
 
 # Theory
-A Differential Amplifier is an funadamental electronic circuit designed to amplify the difference between the two input signals while rejecting an Common-Mode signals that are present on the both input signals. This characteristic makes it highly effective in applications requiring noise reduction. The Differential amplifier typically consists of a pair of transistors configured in a symmetrical manner,allowing it to obtain high common-mode rejection ratio(CMMR)
+A differential amplifier is a fundamental electronic circuit designed to amplify the difference between two input signals while rejecting any common-mode signals present on both inputs. This makes it highly effective in applications where noise reduction is important, as it minimizes interference from external sources like power supply fluctuations and electromagnetic noise. 
 
+It typically consists of a pair of transistors arranged symmetrically, ensuring balanced operation and a high common-mode rejection ratio (CMRR). A high CMRR allows the circuit to suppress unwanted noise and interference, making it useful for precision measurements, sensor signal processing, and communication systems.
+
+Differential amplifiers can be built using either bipolar junction transistors (BJTs) or MOSFETs, depending on the application and performance requirements. They are commonly used as the input stage in operational amplifiers due to their good linearity and stability. To achieve proper operation, they require biasing through current sources, resistor networks, or active loads. More advanced designs use current mirrors or cascode configurations to improve gain and bandwidth.
+
+These amplifiers play a crucial role in instrumentation systems, audio processing, analog-to-digital conversion, and wireless communication. Their ability to reject common-mode noise while amplifying differential signals makes them essential in high-precision and low-noise electronic circuits.
 # Circuit - 1 [With Rss]
 ![Screenshot 2025-03-13 213355](https://github.com/user-attachments/assets/d8c766b4-bff3-4a75-b58a-6d59264301fb)
 
