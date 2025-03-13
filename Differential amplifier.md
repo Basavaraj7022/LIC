@@ -1,8 +1,13 @@
 # EXPERIMENT 3 - DIIFRENTIAL AMPLIFIER 
 AIM: To analyze and design the DC,AC,Transient analysis of Common Source NMOS Amplifier
 # Introduction:
-It is the basic configuration of the MOSFET(Metal oxide semiconductor field effective transistor) where the input is given to the gate terminal and output is driven form the drain terminal and the source is grounded .This amplifier will give the significant gain which is ideally 1 and this amplifier will act as the buffer amplifier which as 180 degree phase shift. DC Analysis is used to determine the Q point in such a way that the transistor is operating in the saturtaion region. The AC analysis is used to determine the gain, amplifiers frequency response and the bandwidth of the amplifier.
+The common source MOSFET amplifier is a widely used circuit in analog electronics, mainly for signal amplification. In this configuration, the input signal is applied to the gate terminal, the output is taken from the drain, and the source is connected to the ground. This amplifier provides a considerable voltage gain and introduces a 180-degree phase shift between the input and output signals, meaning an increase in input voltage results in a decrease in output voltage.
 
+To ensure the MOSFET operates in the saturation region, DC analysis is performed to determine the quiescent point (Q-point). Proper biasing is necessary to keep the transistor in the desired operating region, preventing it from entering cutoff or triode regions, which would affect amplification. 
+
+For small-signal operation, AC analysis is carried out to determine the voltage gain, input and output impedance, and frequency response of the amplifier. The frequency response helps in analyzing the bandwidth, ensuring the circuit amplifies signals effectively within a specific range. Factors like Miller capacitance and parasitic capacitances must be considered, especially at high frequencies, as they can affect gain and stability. 
+
+This type of amplifier is commonly used in RF circuits, audio amplification, and signal processing applications where moderate gain and phase inversion are required. Proper component selection and biasing help in optimizing its performance for different applications.
 # Design Question
 Design differential amplifier for the following specifications
 ____
