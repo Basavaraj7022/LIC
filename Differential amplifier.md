@@ -1,4 +1,4 @@
-# EXPERIMENT 3 - DIIFRENTIAL AMPLIFIER 
+# EXPERIMENT 3 - DIFRENTIAL AMPLIFIER 
 AIM: The DC analysis determines the Q-point to ensure the MOSFET operates in saturation. AC and transient analysis evaluate gain, frequency response, bandwidth, and time-domain behavior for signal amplification.
 # Introduction:
 The common source MOSFET amplifier is a widely used circuit in analog electronics, mainly for signal amplification. In this configuration, the input signal is applied to the gate terminal, the output is taken from the drain, and the source is connected to the ground. This amplifier provides a considerable voltage gain and introduces a 180-degree phase shift between the input and output signals, meaning an increase in input voltage results in a decrease in output voltage.
