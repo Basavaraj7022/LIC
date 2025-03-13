@@ -21,8 +21,9 @@ Perform DC analysis transient analysis and frequency response and extract the re
 A Differential Amplifier is an funadamental electronic circuit designed to amplify the difference between the two input signals while rejecting an Common-Mode signals that are present on the both input signals. This characteristic makes it highly effective in applications requiring noise reduction. The Differential amplifier typically consists of a pair of transistors configured in a symmetrical manner,allowing it to obtain high common-mode rejection ratio(CMMR)
 
 # Circuit - 1 [With Rss]
+![Screenshot 2025-03-13 213355](https://github.com/user-attachments/assets/d8c766b4-bff3-4a75-b58a-6d59264301fb)
 
-C:\Users\Basavaraj k chikki\OneDrive\Pictures\Screenshots
+
 # Design 
 
 * Assume M1 and M2 are perfectly identical
@@ -63,9 +64,9 @@ C:\Users\Basavaraj k chikki\OneDrive\Pictures\Screenshots
       </table>
 <br>Therefore M1 and M2 are in saturation region</br>
 **DC ANALYSIS:-**
+![screen2](https://github.com/user-attachments/assets/e223f16d-af1d-453a-9624-6cfb43b06f81)
 
 
-C:\Users\Basavaraj k chikki\OneDrive
 
  - simulation
       
@@ -100,13 +101,15 @@ C:\Users\Basavaraj k chikki\OneDrive
 - The 3 dB bandwidth will be 19.433 GHz
 
 # CIRCUIT 2 - [**WITH CURRENT SOURCE**]
+![Screenshot 2025-03-13 195834](https://github.com/user-attachments/assets/335ccaef-b8c7-40ac-b3a3-9c301454d8b6)
 
-Screenshot 2025-03-13 195834
+
 For the same design value 
 
 **A**] DC ANALYSIS
 
-![WhatsApp Image 2025-03-09 at 00 52 40_12d3b6ba](https://github.com/user-attachments/assets/2688d7a4-da97-4739-a3a2-a88769948bef)
+![image](https://github.com/user-attachments/assets/462722d7-c2df-43b6-aa93-8e1ca87fa3e1)
+
 
 **B**] TRANSIENT ANALYSIS
 
@@ -126,7 +129,7 @@ For the same design value
 
 # CIRCUIT-3 [**WITH MOSFET**]
 
-![WhatsApp Image 2025-03-09 at 11 44 18_fb51455b](https://github.com/user-attachments/assets/d19c36c6-be12-4415-8944-974850b37c1b)
+![Screenshot 2025-03-13 191824](https://github.com/user-attachments/assets/955ce4aa-4583-4b13-b5ab-6ed505e53386)
 
 
 
