@@ -67,103 +67,6 @@ C:\Users\Basavaraj k chikki\OneDrive\Pictures\Screenshots
 
 C:\Users\Basavaraj k chikki\OneDrive
 
-## when the V<sub>icm</sub> level is 100mV lesser than the given value(1.3V)
-- V<sub>icm</sub> will be 1.3 - 0.1 = 1.2V
-
-![WhatsApp Image 2025-03-09 at 00 29 54_68ab410d](https://github.com/user-attachments/assets/81cc1856-77b0-42b7-ae50-e94f6b9bc282)
-* We can conculde that when we decrease  the V<sub>icm</sub> then
-    <br>**The **V<sub>ocm</sub>** will increase.**</br>
-    <br>**The **I<sub>D</sub>** will decrease.**</br>
-    <br>**The **A<sub>v</sub>** will decrease.**</br>
-    <br>**The total current **I<sub>ss</sub>** will decrease.**</br>
-    <br>**The nodal voltage **Vp** will decrease.**</br>
-
-## when the V<sub>icm</sub> level is 100mV greater than the given value(1.3V)
-- V<sub>icm</sub> will be 1.3 + 0.1 = 1.4V
-![WhatsApp Image 2025-03-09 at 00 30 53_e3a881cb](https://github.com/user-attachments/assets/fd62799d-e4ee-451f-8e3b-bb1f5fb94b1b)
- 
-
-
-* We can conculde that when we inrease  the V<sub>icm</sub> then
-    <br>**The **V<sub>ocm</sub>** will decrease.**</br>
-    <br>**The **I<sub>D</sub>** will increase.**</br>
-    <br>**The **A<sub>v</sub>** will increase.**</br>
-    <br>**The total current **I<sub>ss</sub>** will increase.**</br>
-    <br>**The nodal voltage **Vp** will increase.**</br>
-
- <table>
-     <tr>
-        <td>V<sub>icm</sub> (V)</td>
-        <td>V<sub>ocm</sub> (V)</td>
-        <td>I<sub>D</sub> (mA)</td>
-        <td>V<sub>p</sub> (V)</td>
-        <td>I<sub>ss</sub> (mA)</td>
-        <td>A<sub>v</sub> (V/V)</td>
-     </tr>
-     <tr>
-       <td>1.2</td>
-       <td>1.54</td>
-       <td>0.52</td>
-       <td>0.434</td>
-       <td>1.04</td>
-       <td>4.069</td>
-     </tr>
-     <tr>
-       <td>1.3</td>
-       <td>1.4</td>
-       <td>0.6</td>
-       <td>0.5</td>
-       <td>1.2</td>
-       <td>5</td>
-     </tr>
-     <tr>
-       <td>1.4</td>
-       <td>1.25</td>
-       <td>0.67</td>
-       <td>0.566</td>
-       <td>1.3</td>
-       <td>2.799</td>
-     </tr>
-  </table>
-- **Transisent Analysis:**
-  - A<sub>v</sub> = -g<sub>m</sub>*R<sub>D</sub>
-    - g<sub>gm</sub> = (2*I<sub>D</sub>)/(V<sub>GS</sub> - V<sub>th</sub> )
-    - g<sub>gm</sub> = (2*0.6m)/(0.8-0.36)
-    - g<sub>gm</sub> = 2.77m
-  - A<sub>v</sub> = - 2.7m * 1.83K
-    <table>
-      <td>A<sub>v</sub> = - 4.99V/V</td>
-    </table>
-- simulation
-
- ![WhatsApp Image 2025-03-09 at 00 19 20_b442cab2](https://github.com/user-attachments/assets/51ce51e2-d7b7-4012-9fb5-27d87c6fe055)
-
-- from simulation the differential gain will be A<sub>vdm</sub> = (V<sub>ocm1</sub> - V<sub>ocm2</sub> )/(V<sub>icm1</sub> - V<sub>icm2</sub>)
-   -  A<sub>vdm</sub> = 452.87mV/100mV
-  <table>
-     <td>A<sub>vdm</sub> = 4.528V/V</td>
-     </table>
- - To find Max and Min Swing 
-     - V<sub>icm min</sub> = V<sub>th</sub> + Vp
-     - V<sub>icm min</sub> = 0.36 + 0.5
-     - V<sub>icm min</sub> = 0.86V
-     - V<sub>icm max</sub> = V<sub>DD</sub> - (I<sub>D</sub>*R<sub>D</sub>) + V<sub>th</sub>
-     - V<sub>icm max</sub> = 2.5 - (0.6m*1.833k) + 0.36
-     - V<sub>icm max</sub> = 1.7602V
-     - V<sub>icm</sub>max swing = (0.86 + 1.7602)/2
-       <table>
-         <td>V<sub>icm</sub>max swing = 1.310V</td>
-       </table>
-    - V<sub>ocm min</sub> = V<sub>ov1</sub> + v<sub>p</sub>
-    - V<sub>ocm min</sub> = 0.8 - 0.36 + 0.5
-    - V<sub>ocm min</sub> = 0.94V
-    - V<sub>ocm max</sub> = V<sub>DD</sub> - I<sub>D</sub>*R<sub>D</sub>
-    - V<sub>ocm max</sub> = 2.5 - (0.6m*1.83K)
-    - V<sub>ocm max</sub> = 1.4V
-    - V<sub>ocm</sub>maxswing = (0.94 + 1.4)/2
-     <table>
-        <td>V<sub>ocm</sub>maxswing = 1.17V</td>
-      </table>
  - simulation
       
       ![Image](https://github.com/user-attachments/assets/5019afc3-c582-403e-b1ae-2bf3fe4e3e52)
@@ -198,8 +101,7 @@ C:\Users\Basavaraj k chikki\OneDrive
 
 # CIRCUIT 2 - [**WITH CURRENT SOURCE**]
 
-![WhatsApp Image 2025-03-09 at 00 50 53_2f3aa407](https://github.com/user-attachments/assets/b768414b-2572-44da-9e0c-5c5c142d94f4)
-
+Screenshot 2025-03-13 195834
 For the same design value 
 
 **A**] DC ANALYSIS
