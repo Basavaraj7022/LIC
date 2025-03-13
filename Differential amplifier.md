@@ -145,100 +145,18 @@ For the same design value
 
     ## Result
 
-**Comparision based on the obtained Values**
-  
-  <table>
-    <tr>
-      <td>Parameters</td>
-      <td> Calculated</td>
-      <td>Circuit 1 (with R<sub>ss</sub>)</td>
-      <td>Circuit 2 (with constant current source)</td>
-      <td>Circuit 3 (with NMOS)</td>
-      <td>Observation</td>
-    </tr>
-    <tr>
-      <td>V<sub>icm</sub></td>
-      <td>1.3V</td>
-      <td> 1.3V</td>
-      <td>1.3V</td>
-      <td>1.3V</td>
-      <td>As per the design </td>
-    </tr>
-    <tr>
-      <td>V<sub>ocm</sub></td>
-      <td> 1.4V</td>
-      <td>1.4V</td>
-       <td>1.402V</td>
-        <td>1.4V</td>
-        <td><p>Its as per the simulation , if we want to raise  the V<sub>ocm</sub> then  we need to decrease R<sub>D</sub> or I<sub>D</sub> , if we need to decrease the V<sub>ocm</sub> then either we need to **increase R<sub>D</sub> or I<sub>D</sub></p></td>
-    </tr>
-    <tr>
-      <td>V<sub>p</sub></td>
-      <td>0.5V</td>
-      <td>0.5V</td>
-      <td>0.501V</td>
-      <td>0.50V</td>
-      <td><p>It's Nodal  Voltage </p></td>
-    </tr>
-    <tr>
-      <td>I<sub>D</sub></td>
-      <td>0.6mA</td>
-      <td>0.601mA</td>
-      <td>0.6mA</td>
-      <td>0.601mA</td>
-      <td>If I<sub>D</sub> has to be incresed then we need to increase the width of the MOSFET and vice-versa.
-      </td>
-    </tr>
-    <tr>
-      <td>I<sub>ss</sub></td>
-      <td>1.2mA</td>
-      <td>1.202mA</td>
-      <td>1.2mA</td>
-      <td>1.202mA</td>
-      <td>It's the total current flowing in the differential amplifier and its also called as <em>Tail Current</em></td>
-    </tr>
-    <tr>
-      <td>R<sub>D</sub>
-      <td>1.83KΩ</td>
-      <td>1.83kΩ</td>
-      <td>1.83KΩ</td>
-      <td>1.83kΩ</td>
-      <td>AS we need to set the V<sub>ocm</sub> as per that the R<sub>D</sub> values has Changed.</td>
-    </tr>
-    <tr>
-      <td>g<sub>m</sub></td>
-      <td>2.77mS</td>
-      <td>2.47mS</td>
-      <td>2.47mS</td>
-      <td>3.3551mS</td>
-      <td><p>From calculation the g<sub>m</sub>has been decreased due to differ in the V<sub>th</sub> value.The g<sub>m</sub> value has been increased due to decrease in the V<sub>ov</sub></p></td>
-    </tr>
-    <tr>
-      <td>A<sub>vdm</td>
-        <td>-4.99V/V</td>
-        <td>-4.528 V/V</td>
-        <td> -4.528 V/V</td>
-        <td> -4.528 V/V</td>
-        <td><p>Value extracted from the graph </p></td>
-    </tr>
-        <tr>
-          <td>Gain in dB scale(20log(A<sub>vdm</sub>) </td>
-          <td>13.96dB</td>
-          <td>13.18dB</td>
-          <td>13.18dB</td>
-          <td>15.76dB</td>
-          <td>We can see variation because the gain has been increased</td>
-        </tr>
-        <tr>
-          <td>Bandwidth</td>
-          <td>-</td>
-          <td>19.433GHz</td>
-          <td>19.433GHz</td>
-          <td>21.56GHz</td>
-          <td><p> When compare to Resistor and constant current source the Mosfet Bandwidth has been increased because the MOSFET's high input impedance it reduces the loading effect, allowing for a wider range of frequencies to get amplified without any signal distortion. </p></td>
-        </tr>
-         </table>
-
+| Parameters                  | Calculated | Circuit 1 (with R<sub>ss</sub>) | Circuit 2 (with constant current source) | Circuit 3 (with NMOS) | Observation                                                                                             |
+|-----------------------------|------------|---------------------------------|------------------------------------------|-----------------------|---------------------------------------------------------------------------------------------------------|
+| V<sub>icm</sub>             | 1.3V       | 1.3V                           | 1.3V                                    | 1.3V                  | As per the design                                                                                      |
+| V<sub>ocm</sub>             | 1.4V       | 1.4V                           | 1.402V                                  | 1.4V                  | Its as per the simulation, if we want to raise the V<sub>ocm</sub> then we need to decrease R<sub>D</sub> or I<sub>D</sub>, if we need to decrease the V<sub>ocm</sub> then either we need to **increase R<sub>D</sub> or I<sub>D</sub>** |
+| V<sub>p</sub>               | 0.5V       | 0.5V                           | 0.501V                                  | 0.50V                 | It's Nodal Voltage                                                                                     |
+| I<sub>D</sub>               | 0.6mA      | 0.601mA                        | 0.6mA                                   | 0.601mA               | If I<sub>D</sub> has to be increased then we need to increase the width of the MOSFET and vice-versa.  |
+| I<sub>ss</sub>              | 1.2mA      | 1.202mA                        | 1.2mA                                   | 1.202mA               | It's the total current flowing in the differential amplifier and its also called as *Tail Current*     |
+| R<sub>D</sub>               | 1.83KΩ     | 1.83kΩ                         | 1.83KΩ                                  | 1.83kΩ                | AS we need to set the V<sub>ocm</sub> as per that the R<sub>D</sub> values has Changed.                |
+| g<sub>m</sub>               | 2.77mS     | 2.47mS                         | 2.47mS                                  | 3.3551mS              | From calculation the g<sub>m</sub> has been decreased due to differ in the V<sub>th</sub> value. The g<sub>m</sub> value has been increased due to decrease in the V<sub>ov</sub> |
+| A<sub>vdm</sub>             | -4.99V/V   | -4.528 V/V                     | -4.528 V/V                              | -4.528 V/V            | Value extracted from the graph                                                                         |
+| Gain in dB scale (20log(A<sub>vdm</sub>)) | 13.96dB | 13.18dB                   | 13.18dB                                 | 15.76dB               | We can see variation because the gain has been increased                                               |
+| Bandwidth                   | -          | 19.433GHz                      | 19.433GHz                               | 21.56GHz              | When compare to Resistor and constant current source the Mosfet Bandwidth has been increased because the MOSFET's high input impedance it reduces the loading effect, allowing for a wider range of frequencies to get amplified without any signal distortion. |
 
 
 
