@@ -90,20 +90,4 @@ Miller compensation shifts the dominant pole to ensure phase margin and stable o
 ![image](https://github.com/user-attachments/assets/8e26da18-13dd-4eed-8e62-7057f3e5f9ed)
 
 
-## Documentation
 
-Detailed documentation about the design, operation, and simulation results can be found in the [`/docs/`](docs/) directory.
-
----
-
-## License
-
-[MIT License](LICENSE) — see `LICENSE` file for details.
-
----
-
-## Contributions
-
-Pull requests and suggestions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
-
----
