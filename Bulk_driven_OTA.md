@@ -101,5 +101,5 @@ Bulk-Driven OTAs are used in a variety of modern analog and mixed-signal circuit
 - **Neural Signal Acquisition**: For brain-computer interface and neural prosthetics.
 - **Energy Harvesting Systems**: Signal conditioning in systems powered by harvested energy.
 - **Low-Voltage Data Converters**: Front-ends for ADCs operating below 1V.
-- 
+ 
 
