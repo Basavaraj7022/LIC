@@ -15,6 +15,15 @@ Current mirrors operate by exploiting the characteristics of **active devices** 
 - In **BJT-based mirrors**, the collector current depends exponentially on the base-emitter voltage (V_BE).
 - In **MOSFET-based mirrors**, operation is based on the square-law behavior of MOSFETs in saturation.
 
+- ##  Key Features of Current Mirrors
+
+-  **Current Replication**: Accurately copies a reference current to another part of the circuit.
+-  **Voltage Independence**: Output current remains relatively unaffected by output voltage changes.
+-  **Temperature Stability**: With proper design, current mirrors can exhibit good thermal stability.
+-  **Scalability**: Output current can be a scaled version of the reference current (I_out = n × I_ref).
+-  **Low Component Count**: Typically implemented with just two or more matched transistors.
+
+
 ---
 ##Circuit diagram
 ![image](https://github.com/user-attachments/assets/3b155032-8727-493e-85e9-6f6c45c028f8)
@@ -91,14 +100,6 @@ This document presents the simulation results for the current mirror circuit wit
 ![image](https://github.com/user-attachments/assets/9dc68fb7-937f-45ea-b3de-04196fecdf58)
 
 - **Observation** B<sub>w</sub>=1.94G<sub>Hz</sub>
-
-##  Key Features of Current Mirrors
-
--  **Current Replication**: Accurately copies a reference current to another part of the circuit.
--  **Voltage Independence**: Output current remains relatively unaffected by output voltage changes.
--  **Temperature Stability**: With proper design, current mirrors can exhibit good thermal stability.
--  **Scalability**: Output current can be a scaled version of the reference current (I_out = n × I_ref).
--  **Low Component Count**: Typically implemented with just two or more matched transistors.
 
 ---
 
