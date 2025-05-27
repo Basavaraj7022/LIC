@@ -1,0 +1,41 @@
+# Monostable Multivibrator using 555 Timer IC
+
+##  Aim
+
+To design a circuit using a **555 Timer IC in monostable mode** that generates a **single output pulse** of **0.5 milliseconds** duration upon receiving a trigger signal.
+
+---
+
+##  Theory
+
+A **monostable multivibrator** has:
+- **One stable state (LOW)**.
+- **One temporary state (HIGH)**.
+
+When a **trigger signal** (negative pulse) is applied:
+- The output becomes **HIGH** for a precise time `T`.
+- After time `T`, the output returns to **LOW**, waiting for the next trigger.
+
+The duration of the HIGH output (`T`) is determined by:
+
+Where:
+- `T` = Output pulse duration in seconds
+- `R` = Resistance in ohms (Ω)
+- `C` = Capacitance in farads (F)
+
+This configuration is used in:
+- Delay circuits
+- Pulse generators
+- Debouncing mechanical switches
+
+---
+
+## ⚙️ Working Principle
+
+1. **Default Output**: The 555 timer output is **LOW**.
+2. **Triggering**: When a **negative pulse** is applied to **pin 2**, the timer output becomes **HIGH**.
+3. **Timing Phase**: The capacitor starts charging through the resistor.
+4. **Threshold Level**: Once capacitor voltage reaches **2/3 of Vcc**, the timer resets the output to **LOW**.
+5. **Auto Reset**: The capacitor discharges internally, and the circuit waits for the next trigger.
+
+Output time duration:
