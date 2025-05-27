@@ -89,5 +89,17 @@ Miller compensation shifts the dominant pole to ensure phase margin and stable o
 ## Output
 ![image](https://github.com/user-attachments/assets/8e26da18-13dd-4eed-8e62-7057f3e5f9ed)
 
+## Applications
 
+Bulk-Driven OTAs are used in a variety of modern analog and mixed-signal circuits, especially where ultra-low voltage and low power are critical:
+
+- **Biomedical Instrumentation**: ECG, EEG, and other biosignal amplifiers for wearable or implantable devices.
+- **IoT and Sensor Interfaces**: Analog front-ends for sensor nodes operating under tight energy budgets.
+- **Portable and Battery-Operated Devices**: Hearing aids, fitness trackers, and portable medical devices.
+- **Analog Signal Processing**: Active filters, oscillators, sample-and-hold circuits.
+- **Switched-Capacitor Circuits**: Building block for low-voltage ADCs/DACs.
+- **Neural Signal Acquisition**: For brain-computer interface and neural prosthetics.
+- **Energy Harvesting Systems**: Signal conditioning in systems powered by harvested energy.
+- **Low-Voltage Data Converters**: Front-ends for ADCs operating below 1V.
+- 
 
