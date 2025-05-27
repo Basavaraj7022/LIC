@@ -5,6 +5,8 @@
 A **Current Mirror** is a fundamental building block in analog circuit design, particularly within **Linear Integrated Circuits (LICs)**. Its primary function is to **copy (or "mirror") a reference current** from one branch of a circuit to another with high accuracy. This technique ensures that the mirrored current remains consistent, **independent of supply voltage variations, load changes, or temperature fluctuations**.
 
 ---
+![image](https://github.com/user-attachments/assets/59995b13-ed05-4924-af52-dd388bdd6e5e)
+
 
 ##  How It Works
 
@@ -14,6 +16,9 @@ Current mirrors operate by exploiting the characteristics of **active devices** 
 - In **MOSFET-based mirrors**, operation is based on the square-law behavior of MOSFETs in saturation.
 
 ---
+##Circuit diagram
+![image](https://github.com/user-attachments/assets/3b155032-8727-493e-85e9-6f6c45c028f8)
+
 
 ##  Key Features of Current Mirrors
 
@@ -25,7 +30,7 @@ Current mirrors operate by exploiting the characteristics of **active devices** 
 
 ---
 
-## 📈 Applications of Current Mirrors
+##  Applications of Current Mirrors
 
 Current mirrors are widely utilized in various analog and mixed-signal designs, including:
 
@@ -35,25 +40,3 @@ Current mirrors are widely utilized in various analog and mixed-signal designs, 
 -  **Analog Signal Processing**: Found in differential amplifiers, operational transconductance amplifiers (OTAs), etc.
 -  **Voltage Regulators & Power Management ICs**: Ensure constant current sources and load regulation.
 
----
-
-##  Example: Basic BJT Current Mirror Circuit
-
-```text
-       Vcc
-        |
-        |
-       Rc
-        |
-        |      B
-      |/ C
- Iref --> Q1
-      |\ E
-        |
-        |-----------------
-                          |
-                        |/ C
-                  Iout --> Q2
-                        |\ E
-                          |
-                         GND
