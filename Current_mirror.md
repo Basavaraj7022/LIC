@@ -19,7 +19,34 @@ Current mirrors operate by exploiting the characteristics of **active devices** 
 ##Circuit diagram
 ![image](https://github.com/user-attachments/assets/3b155032-8727-493e-85e9-6f6c45c028f8)
 
+## Design Question
 
+<p>Design a current mirror circuit which has a gain of AV = -10V/V, power supply of Vdd = 1.8V, and power of P <= 1mW. Find reference current (Iref), output current (Id), and total current (Itotal). Perform DC and AC analysis for mirror ratio 1:1, 1:2.</p>
+
+## Design
+-  The MOSFET should be in saturation region 
+<table>
+<td>V1>V<sub>th</sub></td>
+</table>
+i.e 0.5>0.366
+ 
+  -  I<sub>taotal</sub>=P/V<sub>dd</sub>
+<table>
+<td>I<sub>total</sub>=0.55mA</td>
+</table>
+I<sub>total</sub>=I<sub>ref</sub> + I<sub>p</sub>
+I<sub>ref</sub>=I<sub>p</sub>=(I<sub>total</sub>)/2
+<table>
+<td>I<sub>ref</sub>=I<sub>p</sub>=0.27mA</td>
+</table>
+
+## Simulation Outcones
+
+This document presents the simulation results for the current mirror circuit with different L (length) values of MOSFETs. The simulation was conducted for three cases with varying L values.
+
+## Case 1: L = 180 nm
+
+### Simulation Output
 ##  Key Features of Current Mirrors
 
 -  **Current Replication**: Accurately copies a reference current to another part of the circuit.
