@@ -42,6 +42,8 @@ Output time duration:
 T = 1.1 × R × C
 
 ---
+## Output
+
 
 ##  Calculation
 
@@ -100,6 +102,10 @@ R = 454.54 Ω
    - Confirm that the output pulse duration is **approximately 0.5 ms**.
 
 ---
+## output: 
+
+![WhatsApp Image 2025-05-27 at 15 04 34_a8a4eb54](https://github.com/user-attachments/assets/4a4cae07-1c10-40d4-b728-7d5534fff296)
+
 
 ##  Applications
 
