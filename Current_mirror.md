@@ -102,6 +102,37 @@ This document presents the simulation results for the current mirror circuit wit
 - **Observation** B<sub>w</sub>=1.94G<sub>Hz</sub>
 
 ---
+## INFERENCE 
+
+### Current Accuracy
+- **1:1 Ratio**: Achieves higher accuracy in current mirroring because the transistors are identical in size and characteristics. This minimizes the effects of mismatch and process variations, leading to better current matching between the reference and output branches.
+- **1:2 Ratio**: Shows a slight deviation from ideal current mirroring due to differences in transistor widths, which can introduce mismatch and degrade accuracy.
+- **Inference**: The 1:1 ratio offers superior current matching and is preferred when precision is critical.
+
+### Transistor Sizing
+- **1:1 Ratio**: Uses smaller transistors, resulting in reduced silicon area, lower parasitic capacitance, and improved speed. Smaller devices are also easier to match, further enhancing accuracy.
+- **1:2 Ratio**: Requires a larger width for one of the transistors, increasing chip area and potentially adding layout complexity. Larger devices can also introduce greater capacitance, which may impact high-frequency performance.
+- **Inference**: The 1:1 ratio is more efficient in terms of chip area usage and is advantageous in dense IC layouts.
+
+### Output Resistance
+- **1:1 Ratio**: Exhibits higher output resistance, especially when using longer channel lengths (L). Higher output resistance is desirable in current sources to maintain a constant output current regardless of load variations.
+- **1:2 Ratio**: Slightly lower output resistance due to the larger width, which can increase channel-length modulation effects (increased lambda). This can lead to less stable output current with changing output voltage.
+- **Inference**: The 1:1 ratio provides better stability and higher output resistance, making it more suitable for precise current sourcing.
+
+### Power Consumption
+- **1:1 Ratio**: Consumes less power as it employs smaller transistors with lower gate and diffusion capacitances. This is beneficial in low-power applications and helps reduce overall power dissipation in integrated circuits.
+- **1:2 Ratio**: Consumes slightly more power because larger transistors have higher leakage and dynamic power consumption, especially at higher operating frequencies.
+- **Inference**: The 1:1 ratio is more power-efficient and is preferred for portable or battery-operated devices.
+
+### Design Complexity
+- **1:1 Ratio**: Simpler to design, match, and layout. The symmetry makes device matching straightforward and reduces design iterations. Well-suited for applications where scalability and reproducibility are important.
+- **1:2 Ratio**: Involves more complex sizing decisions and requires careful layout to maintain matching and performance. Mismatch increases with size disparity, making precise design challenging.
+- **Inference**: The 1:1 ratio is easier to design and optimize, resulting in more robust and reliable circuits, especially when scaling up for larger arrays or more complex analog blocks.
+
+---
+
+**Overall Conclusion:**  
+The 1:1 current mirror configuration offers clear advantages in terms of accuracy, chip area, output resistance, power consumption, and design simplicity. The 1:2 ratio may be necessary when output current scaling is required, but it introduces complexity and potential trade-offs. Designers should weigh these factors based on the specific application requirements.
 
 ##  Applications of Current Mirrors
 
